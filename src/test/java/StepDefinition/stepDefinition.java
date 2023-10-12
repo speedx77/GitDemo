@@ -88,6 +88,7 @@ public class stepDefinition extends Utils{
 	public void delete_place_payload() throws IOException {
 		System.out.println(place_id);
 		System.out.println("test");
+		System.out.println("test2");
 		resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		request = given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
 	  
