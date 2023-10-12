@@ -86,7 +86,8 @@ public class stepDefinition extends Utils{
 
 	@Given("DeletePlace payload")
 	public void delete_place_payload() throws IOException {
-		//System.out.println(place_id);
+		System.out.println(place_id);
+		System.out.println("test");
 		resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		request = given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
 	  
