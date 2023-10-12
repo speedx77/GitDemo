@@ -91,6 +91,7 @@ public class stepDefinition extends Utils{
 		System.out.println("test2");
 		System.out.println("FOR THE BRANCH");
 		System.out.println("More Code");
+		System.out.println("GitX code");
 		resSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 		request = given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
 	  
